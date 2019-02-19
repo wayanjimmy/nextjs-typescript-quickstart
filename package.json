@@ -15,7 +15,9 @@
     "lint": "tslint \"./**/*.{ts,tsx}\" -p tsconfig.json",
     "now-build": "cross-env BUILD_TARGET=serverless next build",
     "test": "npm run type-check && npm run lint",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "export": "next export",
+    "netlify": "npm run build && npm run export"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",

@@ -5,7 +5,8 @@ const nextConfig = {
   target: process.env.BUILD_TARGET || 'server',
   exportPathMap: function() {
     return {
-      '/': { page: '/' }
+      '/': { page: '/' },
+      '/about': { page: '/about' }
     }
   }
 }

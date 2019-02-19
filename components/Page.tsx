@@ -1,29 +1,20 @@
 import * as React from 'react'
 import Head from 'next/head'
-import normalize from 'styles/normalize'
 
 interface PageProps {
   title?: string
+  children: React.ReactNode
 }
 
-const Page: React.SFC<PageProps> = ({ children, title }) => (
-  <div className="root">
-    <Head>
-      <title>{title || 'Next.js TypeScript Quickstart'}</title>
-    </Head>
-    {children}
-    <style jsx global>
-      {normalize}
-    </style>
-    <style jsx>{`
-      .root {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        overflow-x: hidden;
-      }
-    `}</style>
-  </div>
-)
+function Page({ children, title }: PageProps) {
+  return (
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
+      <Head>
+        <title>{title || 'Next.js TypeScript Quickstart'}</title>
+      </Head>
+      {children}
+    </div>
+  )
+}
 
 export default Page

@@ -11,23 +11,24 @@ export default () => (
   <Page>
     <Navigation />
     <Content>
-      <h1 className="title">Hello world.</h1>
+      <h1 className="mt-0">Hello world.</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Certe non potest. Negabat igitur ullam esse artem, quae ipsa a se
-        proficisceretur; Duo Reges: constructio interrete. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Non igitur
-        bene. Vide, quaeso, rectumne sit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Certe non
+        potest. Negabat igitur ullam esse artem, quae ipsa a se proficisceretur;
+        Duo Reges: constructio interrete. Quid turpius quam sapientis vitam ex
+        insipientium sermone pendere? Non igitur bene. Vide, quaeso, rectumne
+        sit.
       </p>
       <p>
-        Last updated: <time dateTime={lastUpdated}>{relativeTime(new Date(lastUpdated))}</time> |{' '}
+        Last updated:{' '}
+        <time dateTime={lastUpdated}>
+          {relativeTime(new Date(lastUpdated))}
+        </time>{' '}
+        |{' '}
         <Link href="/about" passHref>
           <a>About</a>
         </Link>
       </p>
     </Content>
-    <style jsx>{`
-      .title {
-        margin-top: 0;
-      }
-    `}</style>
   </Page>
 )

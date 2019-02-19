@@ -1,15 +1,5 @@
-import * as React from 'react'
-
-const Content: React.SFC = ({ children }) => (
-  <main>
-    {children}
-    <style jsx>{`
-      main {
-        flex: 1;
-        padding: 1.5rem;
-      }
-    `}</style>
-  </main>
-)
+function Content({ children }: { children: React.ReactNode }) {
+  return <main className="flex-1 p-6 leading-loose">{children}</main>
+}
 
 export default Content

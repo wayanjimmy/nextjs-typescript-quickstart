@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import Page from 'components/Page'
-import Navigation from 'components/Navigation'
-import Content from 'components/Content'
+import Page from 'components/page'
+import Navigation from 'components/navigation'
+import Content from 'components/content'
 import relativeTime from 'utils/relativeTime'
 
 const lastUpdated = '2015-01-25T07:25:15+07:00'

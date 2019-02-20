@@ -13,7 +13,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head />
         <body className="font-sans m-0">
           <Main />
